@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+:root {
+  --ModerateViolet: hsl(263, 55%, 52%);
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --LightGray: hsl(0, 0%, 81%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+
+body {
+  background-color: var(--LightGrayishBlue);
+  font-size: 13px;
+}
+
+main {
+  background-color: transparent;
+  width: 80%;
+  margin: 120px auto;
+}
+
+
+
+
+#column1 {
+  background-color: var(--ModerateViolet);
+  border-radius: 10px;
+}
+
+#column2 {
+  background-color: var(--VeryDarkGrayishBlue);
+  border-radius: 10px;
+}
+
+#column3{
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+#column5 {
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+#column4 {
+  background-color: var(--VeryDarkBlackishBlue);
+  border-radius: 10px;
+}
+
+
+/*---------common features-----------*/
+.main__container {
+  margin: auto;
+}
+
+.column__container {
+  padding: 25px 35px;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.5em;
+}
+
+.profile__status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.profile__img {
+  border-radius: 50%;
+  border: solid 2px var(--LightGray);
+  width: 35px;
+  height: 35px;
+}
+
+.profile__info__name {
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.profile__status {
+  opacity: 0.5;
+}
+
+.text__bold {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin-bottom: 1.5em;
+}
+
+.text__normal__weight {
+  font-weight: 500;
+  opacity: 0.75;
+  font-size: 1.1em;
+}
+
+#bright__colour {
+  color: var(--LightGray);
+}
+
+#bold__white, #normal__white {
+  color: var(--LightGray);
+}
+
+#dark__colour {
+  color: var(--VeryDarkBlackishBlue);
+}
+
+#bold__dark, #normal__dark {
+  color: var(--VeryDarkBlackishBlue);
+}
+
+
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__container {
+    height: 100%;
+  }
+  #inner__first__row {
+    flex-wrap: nowrap;
+  }
+  #inner__second__row {
+    flex-wrap: nowrap;
+  }
+
+
+}
+
